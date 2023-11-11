@@ -14,7 +14,11 @@ app.get('/', (req, res) => {
 
 app.get('/local', (req, res) => {
     res.send('Local data okay');
-})
+});
+
+app.get('/all', (req, res) => {
+    res.send('All test okay');
+});
 
 app.listen(port, () => {
     console.log(`SYSTEM IS RUNNING ON PORT ${port}`);
