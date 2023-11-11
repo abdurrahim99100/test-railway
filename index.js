@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
     res.send('RAILWAY TEST SERVER IS RUNNING');
 });
 
+app.get('/local', (req, res) => {
+    res.send('Local data okay');
+})
+
 app.listen(port, () => {
     console.log(`SYSTEM IS RUNNING ON PORT ${port}`);
 });
